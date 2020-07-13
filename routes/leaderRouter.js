@@ -44,7 +44,7 @@ leaderRouter.route('/')
 
 leaderRouter.route('/:leaderId')
 .get((req,res,next) => {
-    Leaders.findById(req.params.leaderId)
+    Leaders.find({abbr:req.params.leaderId})
     .then( (leader) =>{
         res.statusCode=200;
         res.setHeader('Content-Type','application/json');

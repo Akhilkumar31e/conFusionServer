@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 //Including model Dishes
 const Dishes = require('../models/dishes');
-const { response } = require('../app');
 const authenticate = require('../authenticate');
 const cors = require('./cors');
 
